@@ -1,5 +1,5 @@
 import express from 'express'
-import pool from './../db.js'
+import pool from './../db'
 import asyncHandler from './../methods/async-function.js'
 
 const router = express.Router()

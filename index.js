@@ -2,9 +2,9 @@
 // imports
 import dotenv from 'dotenv'
 import express from 'express'
-import { songs, users } from './data.js'
-import pool from './db.js'
-import faces from './faces.js'
+import { songs, users } from './data'
+import pool from './db'
+import faces from './faces'
 //
 // import middlewares
 import errorHandler from './middlewares/error-handler.js'
