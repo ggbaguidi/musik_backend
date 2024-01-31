@@ -22,14 +22,14 @@ dotenv.config({ path: '.env' })
 //
 // initailize express app
 const app = express()
-const PORT = process.env.PORT || 4444
+const PORT = 4000
 
 // set up express app to handle data parsing
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 
 // initialize routes
-app.get('/', (req, res) => res.json('welcome to the api'))
+app.get('/', (req, res) => res.send('welcome to the api'))
 
 app.get('/artists', async (req, res) => {
 	let allartists = []
@@ -114,5 +114,4 @@ app.use('/api/v1/search/', search)
 app.use(errorHandler)
 
 // set up express app to listen for requests
-app.listen(PORT, () => console.log('listening on port 4444'))
-module.exports = app
+app.listen(PORT, () => console.log(`listening on port ${PORT}`))
