@@ -16,7 +16,6 @@
 		"reviews",
 		"rating"
 	],
-	"type": "module",
 	"dependencies": {
 		"dotenv": "^11.0.0",
 		"express": "^4.17.2",

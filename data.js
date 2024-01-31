@@ -48569,4 +48569,4 @@ const users = [
 			'https://robohash.org/eosperferendisnecessitatibus.png?size=50x50&set=set1',
 	},
 ]
-export { users, songs }
+module.exports = { users, songs }

@@ -260,4 +260,4 @@ const faces = [
 	'https://images.unsplash.com/photo-1544507888-56d73eb6046e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyNjQwNTF8MHwxfHNlYXJjaHwyMzl8fGZhY2V8ZW58MHx8fHwxNjQyMjM2NjY3&ixlib=rb-1.2.1&q=80&w=1080',
 	'https://images.unsplash.com/photo-1606158436223-2321ebf6b594?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyNjQwNTF8MHwxfHNlYXJjaHwyNDB8fGZhY2V8ZW58MHx8fHwxNjQyMjM2NjY3&ixlib=rb-1.2.1&q=80&w=1080',
 ]
-export default faces
+module.exports = faces

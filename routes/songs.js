@@ -1,6 +1,6 @@
-import express from 'express'
-import pool from './../db'
-import asyncHandler from './../methods/async-function.js'
+const  express  = require('express')
+const  pool  = require('./../db.js')
+const  asyncHandler  = require('./../methods/async-function.js')
 
 const router = express.Router()
 
@@ -75,4 +75,4 @@ function getRandomInt(min, max) {
 	return Math.floor(Math.random() * (max - min + 1)) + min
 }
 
-export default router
+module.exports = router

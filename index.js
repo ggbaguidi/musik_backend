@@ -1,19 +1,19 @@
 //
 // imports
-import dotenv from 'dotenv'
-import express from 'express'
-import { songs, users } from './data'
-import pool from './db'
-import faces from './faces'
+const  express  = require('express')
+const  dotenv  = require('dotenv')
+const  { songs, users } = require('./data.js')
+const  pool = require('./db.js')
+const  faces = require('./faces.js')
 //
 // import middlewares
-import errorHandler from './middlewares/error-handler.js'
-import search from './routes/search.js'
-import songroute from './routes/songs.js'
-import tags from './routes/tags.js'
+const errorHandler = require('./middlewares/error-handler.js')
+const search = require('./routes/search.js')
+const songroute = require('./routes/songs.js')
+const tags = require('./routes/tags.js')
 //
 // import routes
-import user from './routes/user.js'
+const user = require('./routes/user.js')
 
 //
 // configure environment variables
