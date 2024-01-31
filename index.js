@@ -115,3 +115,4 @@ app.use(errorHandler)
 
 // set up express app to listen for requests
 app.listen(PORT, () => console.log('listening on port 4444'))
+module.exports = app
