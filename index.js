@@ -5,12 +5,16 @@ const  dotenv  = require('dotenv')
 const  { songs, users } = require('./data.js')
 const  pool = require('./db.js')
 const  faces = require('./faces.js')
+const cookieParser = require('cookie-parser')
+
 //
 // import middlewares
 const errorHandler = require('./middlewares/error-handler.js')
 const search = require('./routes/search.js')
 const songroute = require('./routes/songs.js')
 const tags = require('./routes/tags.js')
+const register = require("./routes/register.js")
+const login = require("./routes/login.js")
 //
 // import routes
 const user = require('./routes/user.js')
@@ -27,6 +31,7 @@ const PORT = 4000
 // set up express app to handle data parsing
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
+app.use(cookieParser())
 
 // initialize routes
 app.get('/', (req, res) => res.send('welcome to the api'))
@@ -111,6 +116,8 @@ app.use('/api/v1/', user)
 app.use('/api/v1/songs/', songroute)
 app.use('/api/v1/tags/', tags)
 app.use('/api/v1/search/', search)
+app.use('/api/v1/', register)
+app.use('/api/v1/', login)
 app.use(errorHandler)
 
 // set up express app to listen for requests
